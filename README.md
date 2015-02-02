@@ -137,6 +137,10 @@ set :unicorn_user, "user"
 # default value: 2
 set :unicorn_workers, 2
 
+# timeout of worker process in seconds
+# default value: 30
+set :unicorn_timeout, 30
+
 # local path to file with certificate, only makes sense if `nginx_use_ssl` is set
 # this file will be copied to remote server
 # default value: none (will be prompted if not set)

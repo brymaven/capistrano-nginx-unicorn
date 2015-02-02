@@ -16,4 +16,5 @@ set :unicorn_config, -> { shared_path.join("config/unicorn.rb") }
 set :unicorn_log, -> { shared_path.join("log/unicorn.log") }
 set :unicorn_user, -> { fetch(:user) }
 set :unicorn_workers, 2
+set :unicorn_timeout, 30
 set :sudo, "sudo"
